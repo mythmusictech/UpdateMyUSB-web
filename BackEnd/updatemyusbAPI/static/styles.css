@@ -3,4 +3,30 @@
     --secondary: #31363F;
     --alternate: #76ABAE;
     --text: #EEEEEE;
+
+    --main-font: Arial;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--main-font), sans-serif;
+    font-size: 100%;
+}
+
+nav {
+    width: auto;
+    margin: 0% 5%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+.nav-button {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: bold;
+}
+.active {
+    color: var(--alternate);
 }

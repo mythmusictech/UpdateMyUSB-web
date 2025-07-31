@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UpdateMyUSB</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="nav-button{% if request.path == '/music/' %} active{% endif %}" href="">Home</a>
+                <a class="nav-button{% if request.path == '/discover/' %} active{% endif %}" href="">Discover</a>
+                <a class="nav-button{% if request.path == '/profile/' %} active{% endif %}" href="">Profile</a>
+            </nav>
+        </header>
+        <main>
+            {% block body %}
+            {% endblock %}
+        </main>
+    </body>
+</html>

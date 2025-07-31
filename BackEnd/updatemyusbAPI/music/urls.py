@@ -11,4 +11,6 @@ urlpatterns = [
 #    path('labels/add/', views.addLabel),
 #    path('genres/', views.getGenres),
 #    path('genres/add', views.addGenre),
+
+    path('', views.temp, name='home'),
 ]
